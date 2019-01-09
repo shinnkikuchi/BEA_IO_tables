@@ -1,0 +1,180 @@
+                                                 September 1, 1993
+
+     Mathematical Derivation of the Total Requirements Tables
+                   for the Input-Output Study 1/
+
+
+The following are definitions:
+
+     q    is a column vector in which each entry shows the total
+          amount of the output of each commodity.
+
+     U    is a commodity-by-industry matrix in which the column
+          shows for a given industry the amount of each commodity it
+          uses, including Noncomparable imports (I-0 80) and Scrap,
+          used and secondhand goods (I-0 81).  I-0 81 is designated 
+          below as scrap. 
+
+     ^    is a symbol that, when placed over a vector, indicates a
+          square matrix in which the elements of the vector appear
+          on the main diagonal and zeros elsewhere.
+                                                            ^
+     i    is a unit (summation) vector containing only l's; i is the
+          identity matrix (I).
+
+
+     e    is a column vector in which each entry shows the total
+          final demand purchases for each commodity from the use
+          table (table 2).
+
+     g    is a column sector in which each entry shows the total
+          amount of each industry's output, including its production
+          of scrap.
+
+     V    is an industry-by-commodity matrix in which the column
+          shows for a given commodity the amount produced in each
+          industry. V has columns showing only zero entries for
+          noncomparable imports and for scrap. The estimate of V is
+          contained in columns 1 - 79 of the make table (table 1)
+          plus columns of zeros for columns 80 and 81.
+
+     h    is a column vector in which each entry shows the total
+          amount of each industry's production of scrap.  The
+          estimate of h is contained in column 81 of the make table.
+          Scrap is separated to prevent its use as an input from
+          generating output in the industries in which it
+          originates.
+
+     B    is a commodity-by-industry matrix in which entries in each
+          column show the amount of a commodity used by an industry
+          per dollar of output of that industry.  Matrix B is derived
+          from matrix U.
+                                                                 2
+
+     D    is an industry-by-commodity matrix in which entries in
+          each column show, for a given commodity (excluding scrap),
+          the proportion of the total output of that commodity
+          produced in each industry. D is referred to as the market
+          share matrix.
+
+     p    is a column vector in which each entry shows the ratio of
+          the value of scrap produced in each industry to the
+          industry's total output.
+
+     W    is an industry-by-commodity matrix in which the entries in
+          each column show, for a given commodity, the proportion of
+          the total output of that commodity produced in each
+          industry adjusted for scrap produced by the industry.
+          This matrix is the transformation matrix.
+
+The following are identities:
+
+                         (1) q = Ui + e
+
+                         (2) g = Vi + h
+
+
+The following are assumptions:
+
+     Inputs are required in proportion to output and the
+     proportions are the same for an industry's primary and
+     secondary products (the industry technology assumption); then:
+
+                                     ^
+                            (3) U = Bg
+
+     Each commodity (other than scrap) is produced by the various
+     industries in fixed proportions (the market shares
+     assumption); then:
+                                     ^
+                            (4) V = Dq
+     Scrap output in each industry is proportional to total output
+     of the industry; then:
+                                    ^
+                            (5) h = pg
+
+
+
+
+
+
+
+
+                                                                 3
+
+The model expressed in equations (1) through (5) thus involves three
+constants (B, D, p) and six variables (U, V, h, e, q, g). The model
+solution is derived as follows:
+
+     Substituting (3) into (1) gives:
+
+                         (6) q = Bg + e
+
+     Substituting (4) into (2) gives:
+
+                         (7) g - h = Dq
+
+     Substituting (5) into (7) and solving for g:
+                                 ^
+                             g - pg = Dq
+                                  ^
+                             (I - p)g = Dq
+
+                                       ^ -1
+                          (8) g = (I - p)  Dq
+
+                                   ^ -1
+                          Let (I - p)   D = W, then
+
+                          (9) g = Wq
+
+     Substituting (9) into (6) and solving for q:
+
+                              q = BWq + e
+
+                              (I - BW)q = e
+
+                                           -1
+                          (10) q = (I - BW)  e
+
+     Substituting (10) into (9) gives:
+                                           -1
+                         (11) g = W(I - BW)  e
+        -1
+(I - BW)   is the commodity-by-commodity total requirements matrix,
+giving commodity output required per dollar of each commodity
+delivered to final users./2
+         -1
+W(I - BW)   is the industry-by-commodity total requirements matrix,
+giving the industry output required per dollar of each commodity
+delivered to final users./2
+
+
+                                                                 4
+
+
+1.    The notation and derivation of the tables presented follow the System of
+      National Accounts recommended by the United Nations.  See: A System of 
+      National Accounts Studies in Methods, Series F No. 2 Rev. 3, United
+      Nations, New York, 1968; also, Stone, R., Bacharach, M. & Bates, J.,
+      "Input-Output Relationships, 1951-1966," Programme for Growth, Volume 3,
+      London, Chapman and Hall, 1963.
+
+2.    Tables are prepared at the detailed and summary levels of aggregation. 
+      For the summary tables, the adjustments for secondary production were
+      made at the detailed level, then aggregated before calculation of the
+      total requirements tables.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

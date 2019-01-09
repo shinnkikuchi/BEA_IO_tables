@@ -1,0 +1,111 @@
+May 10, 1994
+
+
+                          IOXTRACT.EXE DOCUMENTATION
+
+OVERVIEW
+
+IOXTRACT is a program which allows users to extract rows and columns 
+from the 1987 benchmark make (TBL1-87.DAT), use (TBL2-87.DAT), direct 
+requirements (TBL3-87.DAT), and total requirements (TBL4-87.DAT, 
+TBL5-87.DAT) tables.
+
+OPERATION
+
+IOXTRACT reads 2-6 digit input-output (I-O) row and column codes from a
+user-created file and then extracts records containing these codes from
+the data table.  The row and column codes represent commodities or
+industries.  Messages are written to screen when a record is extracted.
+
+The extracted data table records are written to the file IO-OUT.DAT.
+IO-OUT.DAT is rewritten each time the program is run.  Rename this
+file if you wish to save the result from the previous run.
+
+The record count per I-O code extracted is written to screen at the end
+of the program.  The total for all records extracted is also provided.
+
+The files containing the I-O codes and data table are entered on the
+command line.
+
+SAMPLE COMMAND LINE OPERATION:
+
+      I-O codes file:   iocodes
+      Make table file:  tbl1-87.dat
+      Command line:     ioxtract iocodes tbl1-87.dat
+
+      I-O codes file:  iocodes2
+      Use table file:  tbl2-87.dat
+      Command line:    ioxtract iocodes2 tbl2-87.dat
+
+FORMAT OF THE I-O CODES FILE
+
+Users create the I-O codes file.  The file must be an ASCII (PRN) file.
+ASCII files can be created using text editors, such as the DOS
+editor--EDIT.  The file layout table for the I-O codes file follows.
+
+      ---------------------------------------------------
+             Field               Format        Position
+      ---------------------------------------------------
+      Row/Column designator        A1             1
+      I-O Code                      I            2-7
+      ----------------------------------------------------
+      A1: alphanumeric, length 1;   I: integer
+
+The row/column designator signifies whether the following I-O code is
+a row or column.  Valid row designators are: 'r' and 'R'.  Valid column
+designators are: 'c' and 'C'.
+
+Row codes in the use and direct requirements tables represent
+commodities and column codes represent industries.  Row codes in the
+make table represent industries and column codes represent commodities.
+
+The I-O code is a two to six digit numeric code specifying which I-O
+rows or columns are to be extracted.  The fully specified code is six
+digit.  Less than 6 digit codes extract all codes beginning with the
+digits specified;  e.g., 0101 would extract 010101, 010102, 010103, etc.
+
+SAMPLE I-O CODES FILE
+
+r010100                  -- extracts row 010100
+c05                      -- extracts any column beginning with 05
+R070                     -- extracts any row beginning with 070
+C910000                  -- extracts column 910000
+
+I-O CODES FILE ERROR MESSAGES
+
+The program checks the entries in the I-O codes file for some errors,
+such as invalid row/column designators and non-numeric I-O codes.  If a
+bad row/column designator or I-O code is found, the error message and
+bad code is written to screen and the file--BADCODES.   Because the
+program continues, even if some bad codes are found, look at the
+BADCODES file after every run.
+
+The error checking DOES NOT find codes which are syntactically correct,
+but invalid.  For example, use table I-O code r999999 is syntactically
+correct, but is not a valid I-O code.  Use table I-O row codes begin at
+010100 and end at 900000.
+
+The SIC-IO.DOC file contains I-O codes with descriptions.  Expand (if
+necessary) to 6 digits and eliminate the period, to convert these codes
+to the I-O codes required by IOXTRACT.  For example, SIC-IO code 1.0100
+is IOXTRACT code 010100, SIC-IO code 11.0601 is IOXTRACT code 110601,
+etc.
+
+SPEED
+
+This program performs a sequential (record by record) search through
+the entire data table file when searching for rows or columns.
+Sequential searches are slow.  Some representative search times (using
+an IOCODES file containing r0101, r730100, r240, r3601, and c95) in
+the TBL2-87.DAT file are contained in the following table.
+
+              Time to Extract 5555 Records
+      ---------------------------------------------
+                CPU                   Time to
+       CPU     Speed (MHz)   RAM      Extract (Min.)
+      ---------------------------------------------
+       386      20            6         38.5
+       486      66           16          7.7
+      ---------------------------------------------
+
+

@@ -1,0 +1,92 @@
+TBL2-87.FMT                                       April 30, 1994
+
+
+          File Layout Table For Data File: TBL2-87.DAT
+------------------------------------------------------------------------
+Columns            Description
+------------------------------------------------------------------------
+
+  1-  6     Commodity I-O code
+
+  8- 13     Industry I-O code
+
+ 15- 15     Table reference number (2); includes SURVEY tables 2.1 and 2.2
+
+ 16- 24     Use table cell.  These values represent the use of inputs
+            (identified by commodity codes) by industries or final demand
+            (identified by industry codes), in producers' prices.
+
+ 25- 33     Margins and transportation costs.  This field contains an entry
+            only when the commodity codes refer to transportation (65.0100 and
+            65.0300-65.0600), and trade (69.0100 and 69.0200).  The entry
+            represents the sum of the costs of distribution (transportation
+            and trade) associated with all of the inputs consumed by an
+            industry or a final user.  The use table value less this value is
+            the value of transaction that is not transportation cost or
+            margin.
+
+ 34- 42     Railroad transportation costs.  Entries in this field represent
+            rail costs to deliver a commodity to the using industry or final
+            user.
+
+ 43- 51     Truck transportation costs. Entries in this field represent truck
+            costs to deliver a commodity to the using industry or final user. 
+            
+
+ 52- 60     Water transportation costs.  Entries in this field represent water
+            freight costs to deliver a commodity to the using industry or
+            final user. 
+
+ 61- 69     Air transportation costs.  Entries in this field represent air
+            freight costs to deliver a commodity to the using industry or
+            final user. 
+
+ 70- 78     Pipeline transportation costs.  Entries in this field represent
+            oil pipeline transportation costs to deliver a commodity to the
+            using industry or final user.
+
+ 79- 87     Wholesale margin.  Entries in this field represent the wholesale
+            trade margins necessary to deliver a commodity to the using
+            industry or final user.  Included in the margins are sales taxes,
+            State and local excise taxes collected by wholesalers. 
+
+ 88- 96     Retail margin.  Entries in this field represent the retail trade
+            margins necessary to deliver a commodity to the using industry or
+            final demand.  Included in the margins are sales taxes, State and
+            local excise taxes, and Federal excise taxes collected by
+            retailers. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

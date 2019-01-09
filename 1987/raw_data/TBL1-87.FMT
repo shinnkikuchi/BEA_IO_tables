@@ -1,0 +1,31 @@
+
+
+
+
+TBL1-87.FMT                                       April 30, 1994
+
+File layout for TBL1-87.DAT, Table 1.--The Make of Commodities by Industries
+   ------------------------------------------------------------
+         Columns               Description
+   ------------------------------------------------------------
+         1 - 6        Industry I-O code
+
+         8 -13        Commodity I-O code
+
+        15 -15        Table reference number (1)
+
+        16 -24        Make table value.  This field contains the
+                      value of each commodity produced by the
+                      domestic industry in producers' prices.
+                      The industry code is the producing industry,
+                      the commodity code is the commodity
+                      produced.  
+     ------------------------------------------------------------
+
+
+
+
+
+
+
+

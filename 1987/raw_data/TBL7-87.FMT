@@ -1,0 +1,25 @@
+
+
+
+
+TBL7-87.FMT                                      April 30, 1994
+
+File layout for TBL7-87.DAT, Table 7.--Total Commodity Output and Value Added
+   ------------------------------------------------------------
+          Column               Description
+   ------------------------------------------------------------
+         1 - 6    Commodity I-O code
+
+         8 - 8    Table reference number (7)
+
+         9 -18    Total commodity output or value added.  Values are the row
+                  sums of the data on the use table in producers' prices.
+     ------------------------------------------------------------
+
+
+
+
+
+
+
+

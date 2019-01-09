@@ -1,0 +1,98 @@
+
+                                                  April 29, 1994
+
+Documentation for 1987 Benchmark Input-Output Accounts Six-Digit
+Transactions Diskette--Make Table, Use Table (including transportation
+costs and margins), and Direct Requirements Coefficients Table
+
+----------------------------------------------------------------------
+Please make a backup copy of this diskette immediately.
+----------------------------------------------------------------------
+
+Source
+
+      The data on this diskette were prepared by the Interindustry
+      Economics Division, Bureau of Economic Analysis BE-51, U.S.
+      Department of Commerce.  Contact Mark Planting (202-606-5585) if
+      you have questions concerning the content of the diskette.
+
+Ordering Information
+
+      Accession number    51-94-40-001
+      Price               $40  (3 diskettes)
+      Check payable to    Bureau of Economic Analysis
+      Address             U.S. Department of Commerce
+                          Public Information Office
+                          Order Desk, BE-53
+                          Bureau of Economic Analysis
+                          Washington, DC  20230
+
+
+Description of data
+
+      This diskette contains data from the 1987 benchmark input-output
+      (I-O) accounts as published in "Input-Output Accounts of the U.S.
+      Economy, 1987," SURVEY OF CURRENT BUSINESS 74  (April 1994).
+      Reprints of the article are available from the above address at a
+      cost of $25.
+
+      Methodology, coverage of data, and data definitions are noted in
+      the SURVEY article describing the benchmark I-O.
+
+      Data files containing the tables are fixed format ASCII files
+      consisting of a row I-O code, a column I-O code, the table
+      reference number, and the cell value(s).  Values represent
+      millions of dollars in producers' prices.  All values are right
+      justified with decimals shown explicitly.  All cells in the
+      tables are included.  No copyrighted data are found in these
+      files.
+
+      Table 2.--The Use of Commodities by Industries, includes the data
+      found in SURVEY tables 2.1 and 2.2, and transportation costs and
+      margins for each transaction.
+
+      Tables 1, 2, and 3 have been compressed.  Approximate disk space
+      required for the tables:
+
+            Table 1     --  6.5 megabytes
+            Table 2     -- 25.8 megabytes
+            Table 3     --  6.5 megabytes
+
+Procedure for using disk
+
+      Copy all diskette files to a directory on your hard disk.  At the
+      DOS prompt, type TBLX-87, where X is table number 1, 2, or 3, to 
+      uncompress the data files.
+
+      A program has been included to extract data from tables 1, 2, or 
+      3;  see IOXTRACT.DOC.
+
+Description of files
+
+      Files included on these diskettes are:
+
+        File          Disk     Description
+
+      README.DOC        1     Description of the data diskette
+      SIC-IO.DOC        1     I-O codes, descriptions related SIC's
+      TBL1-87.EXE       1     Compressed TBL1-87.DAT--Table 1. The Make
+                              of Commodities by Industries
+      TBL2-87.EXE       2     Compressed TBL2-87.DAT--Table 2. The Use
+                              of Commodities by Industries
+      TBL3-87.EXE       3     Compressed TBL3-87.DAT--Table 3.
+                              Commodity-by-Industry Direct Requirements
+      TBL6-87.DAT       1     Table 6.--Total Industry Output and
+                              Final Uses (column sums for Table 2)
+      TBL7-87.DAT       1     Table 7.--Total Commodity Output and Value
+                              Added (row sums for Table 2)
+      TBL1-87.FMT       1     File layout table for TBL1-87.DAT
+      TBL2-87.FMT       1     File layout table for TBL2-87.DAT
+      TBL3-87.FMT       1     File layout table for TBL3-87.DAT
+      TBL6-87.FMT       1     File layout table for TBL6-87.DAT
+      TBL7-87.FMT       1     File layout table for TBL7-87.DAT
+      MATHIO.DOC        1     Mathematical derivation of I-O accounts
+      IOXTRACT.DOC      1     Documentation for IOXTRACT.EXE
+      IOXTRACT.EXE      1     Program to extract data from tables
+      README.BAT        1     DOS batch program for reading README.DOC
+
+All files have the read-only attribute set.

@@ -1,0 +1,24 @@
+TBL3-87.FMT                                        May 5, 1994
+
+
+File layout for TBL3-87.DAT, Table 3.--Commodity-by-Industry Direct
+Requirements
+
+     ----------------------------------------
+      Column            Description
+     ----------------------------------------
+       1 - 6            Commodity I-O code
+
+       8 -13            Industry I-O code
+
+      15 -15            Table reference number (3); includes SURVEY tables 3.1
+                        and 3.2
+
+      16 -24            Direct requirements coefficients.  These values show   
+                        the amount of the commodity required to produce one
+                        dollar of the industry's output.  The coefficients are
+                        derived from the use table: Commodity input divided by
+                        the total industry output.  Coefficients are shown to
+                        seven decimal places.
+
+

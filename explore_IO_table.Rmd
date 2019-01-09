@@ -1,0 +1,169 @@
+---
+title: "BEA 1987 benchmark IO table"
+# author: "desval"
+output:
+  #pdf_document:
+  #  toc: yes
+  html_document:
+    toc: yes
+    toc_depth: 3
+    toc_float: # no
+          collapsed: false
+          smooth_scroll: false
+    number_sections: false
+    theme: lumen
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+
+rm(list = ls())
+
+knitr::opts_chunk$set(echo = TRUE)
+options(width = 600)
+
+## Load dependencies 
+packages <- c( "knitr", "magrittr", "data.table", "kableExtra")
+to.install <- setdiff(packages, rownames(installed.packages()))
+if (length(to.install) > 0) {
+  install.packages(to.install, repos = "http://cran.us.r-project.org")
+}
+lapply(packages, library, character.only = TRUE)
+
+# pandoc settings
+# set.alignment(row.names = 'left', permanent = T)
+
+# read in data
+va <- readRDS("1987/1987_value_added.RDS")
+fin <- readRDS("1987/1987_final_demand.RDS")
+d_dr <- readRDS("1987/1987_direct_coefficients.RDS")
+
+uni <- readRDS("1987/6digits_unique_codes.RDS")
+
+uni <- uni[ order(digits6),]
+uni <- uni[ , header:= factor(header, levels = header %>% unique)]
+
+# {.tabset}
+# {.tabset .tabset-fade .tabset-pills} 
+# default, tango, pygments, kate, monochrome, espresso, zenburn, haddock, and textmate
+```
+
+# Introduction  
+
+An introduction to the BEA 1987 IO can be found in the April and May 1994 Survey of Current Business. These files are also included in this repository.
+
+* <https://fraser.stlouisfed.org/title/46/item/9868/toc/253120>
+* <https://fraser.stlouisfed.org/title/46/item/9892>
+
+
+Here the contents and characteristics of the 
+[Historical 1987 Benchmark I-O Six-Digit Industry-by-Commodity Total Requirements table](https://www.bea.gov/industry/historical-benchmark-input-output-tables) are illustrated.
+
+
+## Input-Output Format
+
+In its stardard version, the table has the following format:
+
+|               | Industry 1   | Industry 2  | Industry 3  | `Final 1`  | `Final 2`  |
+| ------------- |:------------:|:------------:|:------------:|:------------:|:------------:|
+| **Commodity 1**   |       3      |         7    |       8      |    11      |    12      |
+| **Commodity 2**   |       4      |      6       |      7       |     10     |    8      |
+| `Value added`   |        1      |      2       |      6              
+
+For instance, the table shows that 3$ of commodity 1 was consumed by industry 1 whilie producing its output.  
+
+The table is not symmetric, in the sense that the number of commodities does not match the number of industries raw data from the BEA comes into a 3 column format, with source, destination and amount. 
+
+Therefore, some 6-digits codes appers only as source, some only as destination and some in both. 6-digits codes are organized into 13 different categories. Value added and final demand have both multiple components. The numbers in the table below refer to unique 6-digits codes within each main category.
+
+
+```{r head, echo=FALSE}
+
+cln1 <- c( "header", "digits2", "digits6", "digits6_des")
+cln2 <- c( "header", "digits2", "digits6", "digits6_des", "io_type")
+
+sum_head <- dcast(uni, header ~ io_type, fun.agg = function(x) sum(!is.na(x)), value.var = "io_type")
+
+sum_head  %>% 
+          kable() %>%
+          #kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = F, font_size = 8)
+          kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                       # position = "float_right"  ,
+                        full_width = T,
+                        font_size = 8)
+
+```
+
+## Remarks
+
+The BEA manual mentioned above reports that there should be 11 such sectors. In fact, there are 12, with 110000 being the addition:
+
+
+```{r , echo=FALSE}
+uni[header!="FINAL USES" & io_type=="dest_only", ..cln2 ] %>%
+          kable() %>%
+          kable_styling(bootstrap_options = c("striped", "hover"),
+                       # position = "float_right"  ,
+                         full_width = T,
+                        font_size = 8)
+```
+
+## Government entreprises
+```{r , echo=FALSE}
+uni[header=="GOVERNMENT ENTERPRISES" , ..cln2 ] %>%
+          kable() %>%
+          kable_styling(bootstrap_options = c("striped", "hover"),
+                       # position = "float_right"  ,
+                         full_width = T,
+                        font_size = 8)
+```
+
+
+## Special industries
+```{r , echo=FALSE}
+uni[header=="SPECIAL INDUSTRIES", ..cln2 ] %>%
+          kable() %>%
+          kable_styling(bootstrap_options = c("striped", "hover"),
+                       # position = "float_right"  ,
+                         full_width = T,
+                        font_size = 8)
+```
+
+## Value Added
+```{r , echo=FALSE}
+uni[header=="VALUE ADDED" , ..cln2 ] %>%
+          kable() %>%
+          kable_styling(bootstrap_options = c("striped", "hover"),
+                       # position = "float_right"  ,
+                         full_width = T,
+                        font_size = 8)
+```
+
+
+# Direct requirements
+
+Direct requirements of commodity i required by industry j to produce one unit of output can be obtained by dividing the total requirement by the total industry output. Total industry output is provided by the BEA (table 6), or can be derived "manually". Results are the same (to the 7 digits precision), with one exception. The BEA set all the direct requirements to industry 830001 to zero, even though the output of this industry is 0. 
+```{r , echo=FALSE}
+uni[digits6=="830001" , ..cln2 ] %>%
+          kable() %>%
+          kable_styling(bootstrap_options = c("striped", "hover"),
+                       # position = "float_right"  ,
+                         full_width = T,
+                        font_size = 8)
+```
+
+Industries that have output zero or negative are:
+```{r , echo=FALSE}
+cln3 <- c("destination", "dest_output" ,"digits2_desti", "digits6_des_desti" )
+
+d_dr[dest_output <= 0,  ..cln3 ] %>% unique() %>%
+          kable() %>%
+          kable_styling(bootstrap_options = c("striped", "hover"),
+                       # position = "float_right"  ,
+                         full_width = T,
+                        font_size = 8)
+```
+
+
+
+
