@@ -9,7 +9,7 @@ Code and raw data can be found in the folders scripts and raw_data, respectively
 
 ## Industry to SIC correspondence table
 
-The column "SICs" includes the SIC codes, for each 6 digits industry code, as in the original text file. SIC_exclu indicates whether particular codes are to be excluded. SIC indicated all the corresponding codes for each 6 digits industry code (in long format). Note that some SIC codes are matched to multiple industries. The column SIC_n indicates to how many industry codes a given SIC code is matched (in the raw original BEA data those codes are marked with a *.
+The column "SICs" includes the SIC codes, for each 6 digits industry code, as in the original text file. SIC_exclu indicates whether particular codes are to be excluded. SIC indicated all the corresponding codes for each 6 digits industry code (in long format). Note that some SIC codes are matched to multiple industries. The column SIC_n indicates to how many industry codes a given SIC code is matched (in the raw original BEA data those codes are marked with a *).
 
 
 ```{r}
