@@ -43,7 +43,7 @@ d_com <- c(
 ) 
 
 # conversion table (already processed)
-codes <- fread("1987/1987_6digits_to_SIC_conversion.csv", colClasses = rep("character", 9), na.strings = c("", "NA"))
+codes <- readRDS("1987/1987_6digits_to_SIC_conversion.RDS")
 
 
 
@@ -169,7 +169,7 @@ codes_uni[  .("GOVERNMENT ENTERPRISES"), c("digits6", "digits6_des", "io_type") 
 codes_uni[  .("WHOLESALE AND RETAIL TRADE"), c("digits6", "digits6_des", "io_type") ]  
 codes_uni[  .("SPECIAL INDUSTRIES"), c("digits6", "digits6_des", "io_type") ]  
 
-saveRDS( codes_uni, "1987/6digits_unique_codes.RDS")
+saveRDS( codes_uni, "1987/1987_6digits_unique_codes.RDS")
 
 #' NOTES:
 #' All 3 VALUE ADDED show up only as source: 880000, 890000, 900000. This makes sense
@@ -253,7 +253,7 @@ io_f  <- io[ type == "dir_coeff" , ][ , type := NULL]
 # __________________________
 # add additional info
 
-colonne <-  c("digits2" ,"digits6", "digits6_des","noSIC" )
+colonne <-  c("header","digits2" ,"digits6", "digits6_des","noSIC" )
 io_f <- merge(io_f,
               codes_uni[ dupli == F,][, ..colonne ],
               by.x="destination", by.y = "digits6")
@@ -304,14 +304,26 @@ d_dr[ destination %in% c("830001") , "same" := T]
 d_dr[same==F | is.na(same),  ] 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+## vertical integration ----
+
+# vertical integration
+vert.int <- function(flow_per, level=5){
+  out <- ifelse( (flow_per * 100) >= level, 1, 0)
+}
+
+io_f[  , "vrt5" := mapply(vert.int, flow_per)]
+io_f[ , "vrt1" := mapply(vert.int, flow_per, level=1)]
+io_f[  , "vrt10" := mapply(vert.int, flow_per, level=10)]
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ## save data ----
 
 # final demand
-fwrite( fin_dem, "1987/1987_final_demand.csv", quote = T)
+#fwrite( fin_dem, "1987/1987_final_demand.csv", quote = T)
 saveRDS(fin_dem, "1987/1987_final_demand.RDS" )
 
 # value added
-fwrite( va, "1987/1987_value_added.csv", quote = T)
+#fwrite( va, "1987/1987_value_added.csv", quote = T)
 saveRDS(va, "1987/1987_value_added.RDS" )
 
 # direct_coeff
@@ -320,7 +332,7 @@ saveRDS(va, "1987/1987_value_added.RDS" )
 exp_col <- c("source", "destination","flow", "flow_per")
 #fwrite( io_f[, ..exp_col ], "1987/1987_direct_coefficients.csv", quote = T)
 
-fwrite( io_f[,  ], "1987/1987_direct_coefficients.csv", quote = T)
+# fwrite( io_f[,  ], "1987/1987_direct_coefficients.csv", quote = T)
 saveRDS(io_f, "1987/1987_direct_coefficients.RDS" )
 
 

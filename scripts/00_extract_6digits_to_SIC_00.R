@@ -201,8 +201,8 @@ colonne <- c("header", "digits2", "digits6", "digits6_des", "notes",
 
 d <- d[order(digits6, SIC), ..colonne]
 
-fwrite( d,
-        "1987/1987_6digits_to_SIC_conversion.csv", quote = T)
+saveRDS( d,
+        "1987/1987_6digits_to_SIC_conversion.RDS")
 
 
 
