@@ -65,6 +65,6 @@ Numbers in the column "notes" refer to:
 
 ## BEA 1987 benchmark IO table
 
-A more or less detailed description of the Input-Output table can be found in a [Rmarkdown produced file](explore_IO_table.html) in the repository.
+A more or less detailed description of the Input-Output table can be found in a [Rmarkdown produced file](explore_IO_table.html) in the repository (need to download and save the file, view it with a browser (chrome, firefox etc).
 
 
