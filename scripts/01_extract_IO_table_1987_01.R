@@ -57,6 +57,9 @@ colonne <- c( "header", "digits2", "digits6", "digits6_des")
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ## Explore correspondance ----
 
+# some codes show up two times, deleter the ones marked by dupli
+codes <- codes[ dupli==F,]
+
 # digits6 that have no code
 no_SIC <- codes[is.na(SIC), digits6]
 
@@ -66,7 +69,7 @@ codes_uni <- codes[, ..colonne ] %>% unique
 # info for SIC
 codes_uni[ , "noSIC" := ifelse( digits6 %in% no_SIC, 1, 0 )  ]
 
-# some codes show up in different categories
+# some codes show up in different categories: not anymore: we deleted them above using column "dupli"
 codes_uni$digits6[duplicated(codes_uni$digits6) ]
 # "110601" "110602" "110603" "120215"
 

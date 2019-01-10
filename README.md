@@ -29,6 +29,14 @@ str(crsp)
  $ SIC_n      : chr  "16" "16" "16" "16" ...
 ```
 
+Note that 4  6-digits codes appear under different headers. All belong to the ADDENDUM header, and have no SIC correspondence. However, the respective normal entries in the CONSTRUCTION header do have SIC codes.
+
+* 110601
+* 110602
+* 110603
+* 120215
+
+
 Numbers in the column "notes" refer to:
 
 ```

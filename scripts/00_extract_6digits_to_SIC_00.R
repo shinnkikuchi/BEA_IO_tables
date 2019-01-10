@@ -108,6 +108,11 @@ d[ grep( "\\(excl", notes), "notes" :=  NA ]
 # trim variables
 d[, names(d) := lapply(.SD, str_trim) , .SDcols = names(d) ]
 
+# duplicated
+d[, "dupli" := duplicated(digits6)]
+d[ dupli == T,]
+
+
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ## Process SIC correspondance ----
 
@@ -121,7 +126,7 @@ d[, "SIC" := gsub( "\\s*,\\s*,\\s*", ",", SIC )  ]
 # if there is just a comma and empty characters set to NA
 d[ grepl("^\\s*,*\\s*$", SIC )  , "SIC" := NA ]
 
-d <- setDT(d)[, strsplit(as.character(SIC), ",", fixed=F), by = .(header, digits2,digits6,digits6_des,notes,SIC, SIC_exclu)]
+d <- setDT(d)[, strsplit(as.character(SIC), ",", fixed=F), by = .(header, digits2,digits6,digits6_des,dupli,notes,SIC, SIC_exclu)]
 d[, "V1" := str_trim(V1)]
 setnames(d, "SIC", "SICs")
 
@@ -194,9 +199,9 @@ d[, "digits6" := gsub("\\.", "", digits6) ]
 d[, (names(d)) := lapply( .SD, function(x){ gsub("\\s+", " ", x)}), .SDcols=names(d)]
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-## Set facotrs and save ----
+##  save ----
 
-colonne <- c("header", "digits2", "digits6", "digits6_des", "notes", 
+colonne <- c("header", "digits2", "digits6", "digits6_des", "dupli", "notes", 
              "SICs", "SIC_exclu", "SIC", "SIC_n")
 
 d <- d[order(digits6, SIC), ..colonne]
