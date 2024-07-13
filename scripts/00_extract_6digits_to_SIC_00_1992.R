@@ -23,15 +23,15 @@ lapply(packages, library, character.only = TRUE)
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ## Load data 
 
-i <- readLines("1987/raw_data/sic-io.doc")
-#i = readLines("1992/raw_data/Sic-IO.txt")
+#i <- readLines("1987/raw_data/sic-io.doc")
+i = readLines("1992/raw_data/Sic-IO.txt")
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ## Process correspondance ----
 
 # taking away the header and save the footer somewhere else
-i <- i[-c(1:6)]
-notes <- i[(854:length(i))] 
-i <- i[-c(854:length(i))] 
+i <- i[-c(1:15)]
+notes <- i[(1023:length(i))] 
+i <- i[-c(1023:length(i))] 
 # delete rows that are empty
 i <- i[! grepl("^\\s*$", i )]
 
@@ -39,9 +39,16 @@ i <- i[! grepl("^\\s*$", i )]
 #' The trick is that sometimes descriptions and sic codes are on two lines.
 
 # First of all, some lines contain the general descriptions. They are all in capital characters
-head_grp <- grep("^\\s+[A-Z]{2}", i)
+head_grp <- grep("^[A-Z]{2}", i)
 # sector description
-sect2_grp <- grep("^\\d{1,2}\\+*", i)
+sect2_grp1 <- grep("^\\d{1,2}\\+", i)
+sect2_grp2 <- grep("^\\d{1,2}\\s", i)
+sect2_grp3 <- grep("^\\d{1,2}\\s?[A-Z]{1}", i)
+sect2_grp=c(sect2_grp1,sect2_grp2,sect2_grp3)
+# Sort sect2_grp
+sect2_grp <- sect2_grp[order(sect2_grp)]
+# Drop dupliates
+sect2_grp <- unique(sect2_grp)
 # rows that contain the 6 digits codes
 digits6_grp <- grep("\\d{1,2}\\.\\d{4}", i)
 # what is left should be entries that span two rows:

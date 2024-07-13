@@ -1,0 +1,1119 @@
+Industry Classification of the 1992 Benchmark Input-Output
+Accounts
+
+An asterisk preceding a Standard Industrial Classification (SIC)
+code indicates that the SIC industry is included in more than 
+one I-O industry.  For a description of the systems used in the
+I-O accounts, see the section "Definitions and conventions for
+classification" in the November 1997 Survey of Current Business
+article dealing with the 1992 benchmark.
+
+I-O industry number and title               Related 1987 SIC
+                                            codes
+
+AGRICULTURE, FORESTRY, AND FISHERIES
+
+1 Livestock and livestock products:
+
+1.0100    Dairy farm products            024,*019, *0259, *029
+1.0200    Poultry and eggs               0251-3, *0259, *019,
+                                         *0219,   *029
+1.0301    Meat animals                   0211-4, *0219, *019,
+                                         *0259,   *029
+1.0302    Miscellaneous livestock        0271-3, *0279, *019,
+                                         *0219,   *0259, *029
+2    Other agricultural products:
+
+2.0100    Cotton                         0131, *019, *0219,
+                                         *0259, *029
+2.0201    Food grains                    *011, *019, *0219,
+                                         *0259, *029
+2.0202    Feed grains                    *011, *0139, *019, 
+                                         *0219, *0259, *029
+2.0203    Grass seeds                    *0139, *019, *0219, 
+                                         *0259,    *029
+2.0300    Tobacco                        0132, *019, *0219,
+                                         *0259,     *029
+2.0401    Fruits                         0171-2, 0174-5, *0179,
+                                         *019, *0219, *0259, *029
+2.0402    Tree nuts                      0173, *0179, *019,
+                                         *0219,*0259, *029
+2.0501    Vegetables                      0134, *0139, 016, *019, 
+                                         *0219,*0259, *029, *0119
+2.0502    Sugar crops                    0133, *019, *0219,
+                                         *0259, *029
+2.0503    Miscellaneous crops            *0119, *0139, *019, 
+                                         *0219, *0259, *029
+2.0600    Oil bearing crops              0116, *0119, *0139,
+                                         *0219, *0259, *029
+2.0701    Forest products                *018, *019, *0219,
+                                         *0259, *029
+2.0702    Greenhouse and nursery 
+          products                       *018, *019,* 0219,
+                                         *0259, *029
+
+3    Forestry and fishery products:
+
+3.0001    Forestry products              081, 083, 097
+3.0002    Commercial fishing             091
+
+4    Agricultural, forestry, and fishery services:
+
+4.0001    Agricultural, forestry, and 
+          fishery services               0254, *0279, 071-2,
+                                         075-6, 085, 092
+4.0002    Landscape and horticultural 
+          services                       078
+
+MINING
+
+5+6  Metallic ores mining:
+
+5.0001    Iron and ferroalloy ores, and
+          miscellaneous metal ores, 
+          n.e.c.                         101, 106, 1099
+6.0100    Copper ore                     102
+6.0200    Nonferrous metal ores, except 
+          copper                         103-4, 1094, *108
+
+7    Coal mining:
+
+7.0000    Coal                           122-3, *124
+
+8    Crude petroleum and natural gas:
+
+8.0001    Crude petroleum and natural 
+          gas                            131-2, *138
+
+9+10 Nonmetallic minerals mining:
+
+9.0001    Dimension, crushed and broken
+          stone                          141-2
+9.0002    Sand and gravel                144
+9.0003    Clay, ceramic, and refractory 
+          minerals                       145  
+9.0004    Nonmetallic mineral services
+          and miscellaneous minerals     *148, 149
+10.0000   Chemical and fertilizer 
+          minerals                       147
+
+CONSTRUCTION
+
+11   New construction:
+
+11.0101   New residential 1-unit 
+          structures, nonfarm            *15, *17, *6552
+11.0102   New residential 2-4 unit 
+          structures, nonfarm            *15, *17
+11.0105   New residential additions and
+          alterations, nonfarm           *15, *17
+11.0108   New residential garden and 
+          high-rise apartments           *15, *17, *6552
+11.0400   Highways and streets           *16-17
+11.0501   New farm housing units and 
+          additions and alterations      *15, *17
+11.0601   Petroleum and natural gas well
+          drilling                       *138
+11.0602   Petroleum, natural gas, and 
+          solid mineral exploration      *138, *108, *124, *148
+11.0603   Access structures for solid 
+          mineral development            *108, *124, *148
+11.0800   Office, industrial, and 
+          commercial buildings           *15, *17
+11.0900   Other new construction         *15-17
+
+12   Maintenance and repair construction:
+
+12.0101   Maintenance and repair of farm
+          and nonfarm residential
+          structures                     *15, *17
+12.0214   Maintenance and repair of 
+          highways and streets           *16-17
+12.0215   Maintenance and repair of petro-
+          leum and natural gas wells       *138
+12.0300   Other maintenance and repair   *15-17
+
+MANUFACTURING
+
+13   Ordnance and accessories:
+
+13.0100   Guided missiles and space 
+          vehicles                       3761
+13.0200   Ammunition, except for small 
+          arms, n.e.c.                   3483
+13.0300   Tanks and tank components      3795
+13.0500   Small arms                     3484
+13.0600   Small arms ammunition          3482
+13.0700   Ordnance and accessories, 
+          n.e.c.                         3489
+
+14   Food and kindred products:
+
+14.0101   Meat packing plants            2011
+14.0102   Sausages and other prepared 
+          meat products                  2013
+14.0105   Poultry slaughtering and 
+          processing                     2015
+14.0200   Creamery butter                2021
+14.0300   Natural, processed, and 
+          imitation cheese               2022
+14.0400   Dry, condensed, and 
+          evaporated dairy products      2023
+14.0500   Ice cream and frozen desserts  2024
+14.0600   Fluid milk                     2026
+14.0700   Canned and cured fish and
+          seafoods                       2091
+14.0800   Canned specialties             2032
+14.0900   Canned fruits, vegetables,
+          preserves, jams, and jellies   2033
+14.1000   Dehydrated fruits, vegetables,
+          and soups                      2034
+14.1100   Pickles, sauces, and salad 
+          dressings                      2035
+14.1200   Prepared fresh or frozen fish
+          and seafoods                   2092
+14.1301   Frozen fruits, fruit juices,
+          and vegetables                 2037
+14.1302   Frozen specialties, n.e.c.     2038
+14.1401   Flour and other grain mill 
+          products                       2041
+14.1402   Cereal breakfast foods         2043
+14.1403   Prepared flour mixes and 
+          doughs                         2045
+14.1501   Dog and cat food               2047
+14.1502   Prepared feeds, n.e.c.         2048
+14.1600   Rice milling                   2044
+14.1700   Wet corn milling               2046
+14.1801   Bread, cake, and related 
+          products                       2051
+14.1802   Cookies and crackers           2052
+14.1803   Frozen bakery products, 
+          except bread                   2053
+14.1900   Sugar                          2061-3
+14.2002   Chocolate and cocoa products   2066
+14.2004   Salted and roasted nuts and 
+          seeds                          2068
+14.2005   Candy and other confectionery
+          products, including 
+          chewing gum                    2064, 2067
+14.2101   Malt beverages                 2082
+14.2102   Malt                           2083
+14.2103   Wines, brandy, and brandy 
+          spirits                        2084
+14.2104   Distilled and blended liquors  2085
+14.2200   Bottled and canned soft drinks 2086
+14.2300   Flavoring extracts and 
+          flavoring syrups, n.e.c.       2087
+14.2400   Cottonseed oil mills           2074
+14.2500   Soybean oil mills              2075
+14.2600   Vegetable oil mills, n.e.c.    2076
+14.2700   Animal and marine fats and 
+          oils                           2077
+14.2800   Roasted coffee                 2095
+14.2900   Edible fats and oils, n.e.c.   2079
+14.3000   Manufactured ice               2097
+14.3100   Macaroni, spaghetti, 
+          vermicelli, and noodles        2098
+14.3201   Potato chips and similar 
+          snacks                         2096
+14.3202   Food preparations, n.e.c.      2099
+
+15   Tobacco products:
+
+15.0101   Cigarettes                     211
+15.0102   Cigars                         212
+15.0103   Chewing and smoking tobacco 
+          and snuff                      213
+15.0200   Tobacco stemming and redrying  214
+
+16   Broad and narrow fabrics, yarn and thread mills:
+
+16.0100   Broadwoven fabric mills 
+          and fabric finishing plants    221-3, 2261-2
+16.0200   Narrow fabric mills            224
+16.0300   Yarn mills and finishing of 
+          textiles, n.e.c.               2269, 2281-2
+16.0400   Thread mills                   2284
+
+17   Miscellaneous textile goods and floor coverings:
+
+17.0100   Carpets and rugs               227
+17.0600   Coated fabrics, not rubberized 2295
+17.0700   Tire cord and fabrics          2296
+17.0900   Cordage and twine              2298
+17.1001   Nonwoven fabrics               2297
+17.1100   Textile goods, n.e.c.          2299
+
+18   Apparel:
+
+18.0101   Women's hosiery, except 
+          socks                          2251
+18.0102   Hosiery, n.e.c.                2252
+18.0201   Knit outerwear mills           2253
+18.0202   Knit underwear and nightwear 
+          mills                          2254
+18.0203   Knitting mills, n.e.c.         2259
+18.0300   Knit fabric mills              2257-8
+18.0400   Apparel made from purchased 
+          materials                      231-8
+
+19   Miscellaneous fabricated textile products:
+
+19.0100   Curtains and draperies         2391
+19.0200   Housefurnishings, n.e.c.       2392
+19.0301   Textile bags                   2393
+19.0302   Canvas and related products    2394
+19.0303   Pleating and stitching         2395
+19.0304   Automotive and apparel 
+          trimmings                      2396
+19.0305   Schiffli machine embroideries  2397
+19.0306   Fabricated textile products,
+          n.e.c.                         2399
+
+20+21     Lumber and wood products:
+
+20.0100   Logging                        241
+20.0200   Sawmills and planing mills, 
+          general                        2421
+20.0300   Hardwood dimension and 
+          flooring mills                 2426
+20.0400   Special product sawmills,
+          n.e.c.                         2429
+20.0501   Millwork                       2431
+20.0502   Wood kitchen cabinets          2434
+20.0600   Veneer and plywood             2435-6
+20.0701   Structural wood members, 
+          n.e.c.                         2439
+20.0702   Prefabricated wood buildings 
+          and components                 2452
+20.0703   Mobile homes                   2451
+20.0800   Wood preserving                2491
+20.0901   Wood pallets and skids         2448
+20.0903   Wood products, n.e.c.          2499
+20.0904   Reconstituted wood products    2493
+21.0000   Wood containers, n.e.c.        2441, 2449
+
+22+23     Furniture and fixtures:
+
+22.0101   Wood household furniture, 
+          except upholstered             2511
+22.0102   Household furniture, n.e.c.    2519
+22.0103   Wood television and radio 
+          cabinets                       2517
+22.0200   Upholstered household 
+          furniture                      2512
+22.0300   Metal household furniture      2514
+22.0400   Mattresses and bedsprings      2515
+23.0100   Wood office furniture          2521
+23.0200   Office furniture, except wood  2522
+23.0300   Public building and related 
+          furniture                      253
+23.0400   Wood partitions and fixtures   2541
+23.0500   Partitions and fixtures, 
+          except wood                    2542
+23.0600   Drapery hardware and window
+          blinds and shades              2591
+23.0700   Furniture and fixtures, n.e.c. 2599
+
+24   Paper and allied products, except containers:
+
+24.0100   Pulp mills                     261
+24.0400   Envelopes                      2677
+24.0500   Sanitary paper products        2676
+24.0701   Paper coating and glazing      2671-2
+24.0702   Bags, except textile           2673-4
+24.0703   Die-cut paper and paperboard 
+          and cardboard                  2675
+24.0705   Stationery, tablets, and 
+          related products               2678
+24.0706   Converted paper products, 
+          n.e.c.                         2679
+24.0800   Paper and paperboard mills     262-3
+
+25   Paperboard containers and boxes:
+
+25.0000   Paperboard containers and 
+          boxes                          265
+
+26A  Newspapers and periodicals:
+
+26.0100   Newspapers                     271
+26.0200   Periodicals                    272
+
+26B  Other printing and publishing:
+
+26.0301   Book publishing                2731
+26.0302   Book printing                  2732
+26.0400   Miscellaneous publishing       274
+26.0501   Commercial printing            275
+26.0601   Manifold business forms        276
+26.0602   Blankbooks, looseleaf binders
+          and devices                    2782
+26.0700   Greeting cards                 277
+26.0802   Bookbinding and related work   2789
+26.0803   Typesetting                    2791
+26.0806   Platemaking and related 
+          services                       2796
+
+27A  Industrial and other chemicals:
+
+27.0100   Industrial inorganic and 
+          organic chemicals              281, 2865, 2869
+27.0401   Gum and wood chemicals         2861
+27.0402   Adhesives and sealants         2891
+27.0403   Explosives                     2892
+27.0404   Printing ink                   2893
+27.0405   Carbon black                   2895
+27.0406   Chemicals and chemical 
+          preparations, n.e.c.           2899
+
+27B  Agricultural fertilizers and chemicals:
+
+27.0201   Nitrogenous and phosphatic
+          fertilizers                    2873-4
+27.0202   Fertilizers, mixing only       2875
+27.0300   Pesticides and agricultural 
+          chemicals, n.e.c.              2879
+
+28   Plastics and synthetic materials:
+
+28.0100   Plastics materials and resins  2821
+28.0200   Synthetic rubber               2822
+28.0300   Cellulosic manmade fibers      2823
+28.0400   Manmade organic fibers, except 
+          cellulosic                     2824
+
+29A  Drugs:
+
+29.0100   Drugs                          283
+
+29B  Cleaning and toilet preparations:
+
+29.0201   Soap and other detergents      2841
+29.0202   Polishes and sanitation goods  2842
+29.0203   Surface active agents          2843
+29.0300   Toilet preparations            2844
+
+
+30   Paints and allied products:
+
+30.0000   Paints and allied products     285
+
+31   Petroleum refining and related products:
+
+31.0101   Petroleum refining             291
+31.0102   Lubricating oils and greases   2992
+31.0103   Products of petroleum and 
+          coal, n.e.c.                   2999
+31.0200   Asphalt paving mixtures and
+          blocks                         2951
+31.0300   Asphalt felts and coatings     2952
+
+32   Rubber and miscellaneous plastics products:
+
+32.0100   Tires and inner tubes          301
+32.0200   Rubber and plastics footwear   302
+32.0300   Fabricated rubber products, 
+          n.e.c.                         306
+32.0400   Miscellaneous plastics 
+          products, n.e.c.               308
+32.0500   Rubber and plastics hose and
+          belting                        3052
+32.0600   Gaskets, packing, and 
+          sealing devices                3053
+
+33+34     Footwear, leather, and leather products:
+
+33.0001   Leather tanning and finishing  311
+34.0100   Boot and shoe cut stock and 
+          findings                       313
+34.0201   Shoes, except rubber           3143-4, 3149
+34.0202   House slippers                 3142
+34.0301   Leather gloves and mittens     315
+34.0302   Luggage                        316
+34.0303   Women's handbags and purses    3171
+34.0304   Personal leather goods, n.e.c. 3172
+34.0305   Leather goods, n.e.c.          319
+
+35   Glass and glass products:
+
+35.0100   Glass and glass products, 
+          except containers              321, 3229, 323
+35.0200   Glass containers               3221
+
+36   Stone and clay products:
+     
+36.0100   Cement, hydraulic              324
+36.0200   Brick and structural clay 
+          tile                           3251
+36.0300   Ceramic wall and floor tile    3253
+36.0400   Clay refractories              3255
+36.0500   Structural clay products, 
+          n.e.c.                         3259
+36.0600   Vitreous china plumbing 
+          fixtures                       3261
+36.0701   Vitreous china table and 
+          kitchenware                    3262
+36.0702   Fine earthenware table and 
+          kitchenware                    3263
+36.0800   Porcelain electrical supplies  3264
+36.0900   Pottery products, n.e.c.       3269
+36.1000   Concrete block and brick       3271
+36.1100   Concrete products, except 
+          block and brick                3272
+36.1200   Ready-mixed concrete           3273
+36.1300   Lime                           3274
+36.1400   Gypsum products                3275
+36.1500   Cut stone and stone products   328
+36.1600   Abrasive products              3291
+36.1700   Asbestos products              3292
+36.1900   Minerals, ground or treated    3295
+36.2000   Mineral wool                   3296
+36.2100   Nonclay refractories           3297
+36.2200   Nonmetallic mineral products,
+          n.e.c.                         3299
+
+37   Primary iron and steel manufacturing:
+
+37.0101   Blast furnaces and steel 
+          mills                          3312
+37.0102   Electrometallurgical products, 
+          except steel                   3313
+37.0103   Steel wiredrawing and steel
+          nails and spikes               3315
+37.0104   Cold-rolled steel sheet, 
+          strip, and bars                3316
+37.0105   Steel pipe and tubes           3317
+37.0200   Iron and steel foundries       332
+37.0300   Iron and steel forgings        3462
+37.0401   Metal heat treating            3398
+37.0402   Primary metal products, n.e.c. 3399
+
+38   Primary nonferrous metals manufacturing:
+
+38.0100   Primary smelting and refining
+          of copper                      3331
+38.0400   Primary aluminum               3334
+38.0501   Primary nonferrous metals, 
+          n.e.c.                         3339
+38.0600   Secondary nonferrous metals    334
+38.0700   Rolling, drawing, and extruding
+          of copper                      3351
+38.0800   Aluminum rolling and drawing   3353-5
+38.0900   Nonferrous rolling and drawing,
+          n.e.c.                         3356
+38.1000   Nonferrous wiredrawing and
+          insulating                     3357
+38.1100   Aluminum castings              3363, 3365
+38.1200   Copper foundries               3366
+38.1300   Nonferrous castings, n.e.c.    3364, 3369
+38.1400   Nonferrous forgings            3463
+
+39   Metal containers:
+
+39.0100   Metal cans                     3411
+39.0200   Metal shipping barrels, drums,
+          kegs, and pails                3412
+
+40   Heating, plumbing, and fabricated structural metal products:
+
+40.0100   Enameled iron and metal 
+          sanitary ware                  3431
+40.0200   Plumbing fixture fittings and 
+          trim                           3432
+40.0300   Heating equipment, except 
+          electric and warm air furnaces 3433
+40.0400   Fabricated structural metal    3441
+40.0500   Metal doors, sash, frames, 
+          molding, and trim              3442
+40.0600   Fabricated plate work 
+          (boiler shops)                 3443
+40.0700   Sheet metal work               3444
+40.0800   Architectural and ornamental
+          metal work                     3446
+40.0901   Prefabricated metal buildings
+          and components                 3448
+40.0902   Miscellaneous structural metal
+          work                           3449
+
+
+
+
+41   Screw machine products and stampings:
+
+41.0100   Screw machine products,
+          bolts, etc.                    345
+41.0201   Automotive stampings           3465
+41.0202   Crowns and closures            3466
+41.0203   Metal stampings, n.e.c.        3469
+
+42   Other fabricated metal products:
+
+42.0100   Cutlery                        3421
+42.0201   Hand and edge tools, except 
+          machine tools and handsaws     3423
+42.0202   Saw blades and handsaws        3425
+42.0300   Hardware, n.e.c.               3429
+42.0401   Plating and polishing          3471
+42.0402   Coating, engraving, and allied
+          services, n.e.c.               3479
+42.0500   Miscellaneous fabricated wire 
+          products                       3495-6
+42.0700   Steel springs, except wire     3493
+42.0800   Pipe, valves, and pipe 
+          fittings                       3491-2, 3494, 3498
+42.1000   Metal foil and leaf            3497
+42.1100   Fabricated metal products,
+          n.e.c.                         3499
+
+43   Engines and turbines:
+
+43.0100   Turbines and turbine 
+          generator sets                 3511
+43.0200   Internal combustion engines, 
+          n.e.c.                         3519
+
+44+45     Farm, construction, and mining machinery:
+
+44.0001   Farm machinery and equipment   3523
+44.0002   Lawn and garden equipment      3524
+45.0100   Construction machinery and 
+          equipment                      3531
+45.0200   Mining machinery, except oil 
+          field                          3532
+45.0300   Oil and gas field machinery 
+          and equipment                  3533
+
+46   Materials handling machinery and equipment:
+
+46.0100   Elevators and moving 
+          stairways                      3534
+46.0200   Conveyors and conveying 
+          equipment                      3535
+46.0300   Hoists, cranes, and monorails  3536
+46.0400   Industrial trucks and tractors 3537
+
+47   Metalworking machinery and equipment:
+
+47.0100   Machine tools, metal cutting 
+          types                          3541
+47.0200   Machine tools, metal forming
+          types                          3542
+47.0300   Special dies and tools and 
+          machine tool accessories       3544-5
+47.0401   Power-driven handtools         3546
+47.0402   Rolling mill machinery and 
+          equipment                      3547
+47.0404   Electric and gas welding and 
+          soldering equipment            3548
+47.0405   Industrial patterns            3543
+47.0500   Metalworking machinery, n.e.c. 3549
+
+48   Special industry machinery and equipment:
+
+48.0100   Food products machinery        3556
+48.0200   Textile machinery              3552
+48.0300   Woodworking machinery          3553
+48.0400   Paper industries machinery     3554
+48.0500   Printing trades machinery and 
+          equipment                      3555
+48.0600   Special industry machinery,
+          n.e.c.                         3559
+
+49   General industrial machinery and equipment:
+
+49.0100   Pumps and compressors          3561, 3563
+49.0200   Ball and roller bearings       3562
+49.0300   Blowers and fans               3564
+49.0500   Mechanical power transmission 
+          equipment                      3566, 3568
+49.0600   Industrial process furnaces 
+          and ovens                      3567
+49.0700   General industrial machinery 
+          and equipment, n.e.c.          3569
+49.0800   Packaging machinery            3565
+
+50   Miscellaneous machinery, except electrical:
+
+50.0100   Carburetors, pistons, rings,
+          and valves                     3592
+50.0200   Fluid power equipment          3593-4
+50.0300   Scales and balances, except 
+          laboratory                     3596
+50.0400   Industrial and commercial 
+          machinery and equipment,
+          n.e.c.                         3599
+
+
+
+
+51   Computer and office equipment:
+
+51.0102   Calculating and accounting 
+          machines                       3578
+51.0103   Electronic computers           3571
+51.0104   Computer peripheral equipment  3572, 3575, 3577
+51.0400   Office machines, n.e.c.        3579
+
+52   Service industry machinery:
+
+52.0100   Automatic vending machines     3581
+52.0200   Commercial laundry equipment   3582
+52.0300   Refrigeration and heating 
+          equipment                      3585
+52.0400   Measuring and dispensing pumps 3586
+52.0500   Service industry machinery, 
+          n.e.c.                         3589
+
+53   Electrical industrial equipment and apparatus:
+
+53.0200   Power, distribution, and 
+          specialty transformers         3612
+53.0300   Switchgear and switchboard 
+          apparatus                      3613
+53.0400   Motors and generators          3621
+53.0500   Relays and industrial controls 3625
+53.0700   Carbon and graphite products   3624
+53.0800   Electrical industrial 
+          apparatus, n.e.c.              3629
+
+54   Household appliances:
+
+54.0100   Household cooking equipment    3631
+54.0200   Household refrigerators and 
+          freezers                       3632
+54.0300   Household laundry equipment    3633
+54.0400   Electric housewares and fans   3634
+54.0500   Household vacuum cleaners      3635
+54.0700   Household appliances, n.e.c.   3639
+
+55   Electric lighting and wiring equipment:
+
+55.0100   Electric lamp bulbs and tubes  3641
+55.0200   Lighting fixtures and 
+          equipment                      3645-8
+55.0300   Wiring devices                 3643-4
+
+
+56   Audio, video, and communication equipment:
+
+56.0100   Household audio and video 
+          equipment                      3651
+56.0200   Prerecorded records and tapes  3652
+56.0300   Telephone and telegraph 
+          apparatus                      3661
+56.0500   Communication equipment        3663, 3669
+
+57   Electronic components and accessories:
+
+57.0100   Electron tubes                 3671
+57.0200   Semiconductors and related 
+          devices                        3674
+57.0300   Other electronic components    3672, 3675-9
+
+58   Miscellaneous electrical machinery and supplies:
+
+58.0100   Storage batteries              3691
+58.0200   Primary batteries, dry 
+          and wet                        3692
+58.0400   Electrical equipment for 
+          internal combustion engines    3694
+58.0600   Magnetic and optical 
+          recording media                3695
+58.0700   Electrical machinery, 
+          equipment, and supplies,
+          n.e.c.                         3699
+
+59A  Motor vehicles (passenger cars and trucks):
+
+59.0301   Motor vehicles and passenger 
+          car bodies                     3711
+
+59B  Truck and bus bodies, trailers, and motor vehicles parts:
+
+59.0100   Truck and bus bodies           3713
+59.0200   Truck trailers                 3715
+59.0302   Motor vehicle parts and 
+          accessories                    3714
+
+60   Aircraft and parts:
+
+60.0100   Aircraft                       3721
+60.0200   Aircraft and missile engines
+          and engine parts               3724, 3764
+60.0400   Aircraft and missile 
+          equipment, n.e.c.              3728, 3769
+
+61   Other transportation equipment:
+
+61.0100   Ship building and repairing    3731
+61.0200   Boat building and repairing    3732
+61.0300   Railroad equipment             374
+61.0500   Motorcycles, bicycles, and 
+          parts                          375
+61.0601   Travel trailers and campers    3792
+61.0603   Motor homes                    3716
+61.0700   Transportation equipment, 
+          n.e.c.                         3799
+
+62   Scientific and controlling instruments:
+
+62.0101   Search and navigation 
+          equipment                      381
+62.0102   Laboratory apparatus and 
+          furniture                      3821
+62.0200   Mechanical measuring devices   3823-4, 3829
+62.0300   Environmental controls         3822
+62.0400   Surgical and medical 
+          instruments and apparatus      3841
+62.0500   Surgical appliances and 
+          supplies                       3842
+62.0600   Dental equipment and supplies  3843
+62.0700   Watches, clocks, watchcases, 
+          and parts                      387
+62.0800   X-ray apparatus and tubes      3844
+62.0900   Electromedical and electro-
+          therapeutic apparatus          3845
+62.1000   Laboratory and optical 
+          instruments                    3826-7
+62.1100   Instruments to measure 
+          electricity                    3825
+
+63   Ophthalmic and photographic equipment:
+
+63.0200   Ophthalmic goods               385
+63.0300   Photographic equipment and 
+          supplies                       386
+
+64   Miscellaneous manufacturing:
+
+64.0101   Jewelry, precious metal        3911
+64.0102   Jewelers' materials and 
+          lapidary work                  3915
+64.0104   Silverware and plated ware     3914
+64.0105   Costume jewelry                3961
+64.0200   Musical instruments            393
+64.0301   Games, toys, and children's 
+          vehicles                       3944
+64.0302   Dolls and stuffed toys         3942
+64.0400   Sporting and athletic goods,
+          n.e.c.                         3949
+64.0501   Pens, mechanical pencils, 
+          and parts                      3951
+64.0502   Lead pencils and art goods     3952
+64.0503   Marking devices                3953
+64.0504   Carbon paper and inked ribbons 3955
+64.0700   Fasteners, buttons, needles, 
+          and pins                       3965
+64.0800   Brooms and brushes             3991
+64.0900   Hard surface floor coverings,
+          n.e.c.                         3996
+64.1000   Burial caskets                 3995
+64.1100   Signs and advertising 
+          specialties                    3993
+64.1200   Manufacturing industries, 
+          n.e.c.                         3999
+
+TRANSPORTATION, COMMUNICATIONS, AND UTILITIES
+
+65A  Railroads and related services; passenger ground
+     transportation:
+
+65.0100   Railroads and related services 40, 474
+65.0200   Local and suburban transit 
+          and interurban highway
+          passenger transportation       41
+
+65B  Motor freight transportation and warehousing:
+
+65.0301   Trucking and courier services,
+          except air                     421, 423
+65.0302   Warehousing and storage        422
+
+65C  Water transportation:
+
+65.0400   Water transportation           44
+
+65D  Air transportation:
+
+65.0500   Air transportation             45
+
+65E  Pipelines, freight forwarders, and related services:
+
+65.0600   Pipelines, except natural gas  46
+65.0701   Freight forwarders and other 
+          transportation services        473, 478
+65.0702   Arrangement of passenger
+          transportation                 472
+
+66   Communications, except radio and TV:
+
+66.0100   Telephone and telegraph
+          communications, and commun-
+          ications services, n.e.c.      481-2, 489
+66.0200   Cable and other pay television
+          services                       484
+
+67   Radio and TV broadcasting:
+
+67.0000   Radio and TV broadcasting      483
+
+68A  Electric services (utilities):
+
+68.0100   Electric services (utilities)  491, 4931
+
+68B  Gas production and distribution (utilities):
+
+68.0201   Natural gas transportation     4922, *4923
+68.0202   Natural gas distribution       *4923, 4924, 4925, 4932,
+                                         4939
+
+68C  Water and sanitary services:
+
+68.0301   Water supply and sewerage 
+          systems                        494, 4952
+68.0302   Sanitary services, steam 
+          supply, and Irrigation systems 4953, 4959, 496-7
+
+WHOLESALE AND RETAIL TRADE
+
+69A  Wholesale trade:
+
+69.0100   Wholesale trade                50, 51
+
+69B  Retail trade:
+
+69.0200   Retail trade, except eating 
+          and drinking                   52-7, 59
+
+FINANCE, INSURANCE, AND REAL ESTATE
+
+70A  Finance:
+
+70.0100   Banking                        60
+70.0200   Credit agencies other than 
+          banks                          61, 67 (excl. 6732)
+70.0300   Security and commodity 
+          brokers                        62
+
+70B  Insurance:
+
+70.0400   Insurance carriers             63
+70.0500   Insurance agents, brokers,
+          and services                   64
+
+71A  Owner-occupied dwellings:
+
+71.0100    Owner-occupied dwellings      --
+
+71B  Real estate and royalties:
+
+71.0201   Real estate agents, managers,
+          operators, and lessors         65 (excl. 6552)
+71.0202   Royalties                      --
+
+SERVICES
+
+72A  Hotels and lodging places:
+
+72.0101   Hotels                         701
+72.0102   Other lodging places           702-4
+
+72B  Personal and repair services (except auto):
+
+72.0201   Laundry, cleaning, garment 
+          services, and shoe repair      721, 725
+72.0202   Funeral service and 
+          crematories                    726
+72.0203   Portrait photographic 
+          studios, and other miscell-
+          aneous personal services       722, 729
+72.0204   Electrical repair shops        762
+72.0205   Watch, clock, jewelry, and 
+          furniture repair               763-4
+72.0300   Beauty and barber shops        723-4
+
+73A  Computer and data processing services:
+
+73.0104   Computer and data 
+          processing services            737
+
+73B  Legal, engineering, accounting, and related services:
+
+73.0301   Legal services                 81
+73.0302   Engineering, architectural, 
+          and surveying services         871
+73.0303   Accounting, auditing and book-
+          keeping, and miscellaneous
+          services, n.e.c.               872, 89
+
+73C  Other business and professional services, except medical:
+
+73.0101   Miscellaneous repair shops     769
+73.0102   Services to dwellings and 
+          other buildings                734
+73.0103   Personnel supply services      736
+73.0106   Detective and protective 
+          services                       7381-2
+73.0107   Miscellaneous equipment rental
+          and leasing                    735
+73.0108   Photofinishing labs and 
+          commercial photography         7335-6, 7384
+73.0109   Other business services        732, 7331, 7334, 7338,
+                                         7383, 7389
+73.0111   Management and consulting 
+          services                       874
+73.0112   Testing and research labs      8731-2, 8734
+
+73D  Advertising:
+
+73.0200   Advertising                    731
+
+74   Eating and drinking places:
+
+74.0000   Eating and drinking places     58
+
+75   Automotive repair and services:
+
+75.0001   Automotive rental and leasing, 
+          without drivers                751
+75.0002   Automotive repair shops and 
+          services                       753, 7549
+75.0003   Automobile parking and car 
+          washes                         752, 7542
+
+76   Amusements:
+
+76.0101   Motion picture services and
+          theaters                       781-3
+76.0102   Video tape rental              784
+76.0201   Theatrical producers 
+          (except motion picture), bands,
+          orchestras and entertainers    792
+76.0202   Bowling centers                793
+76.0203   Professional sports clubs and 
+          promoters                      7941
+76.0204   Racing, including track 
+          operation                      7948
+76.0205   Physical fitness facilities
+          and membership sports and 
+          recreation clubs               7991, 7997
+76.0206   Other amusement and 
+          recreation services            791, 7992-3, 7996, 7999
+
+77A  Health services:
+
+77.0100   Doctors and dentists           801-3, 8041
+77.0200   Hospitals                      806
+77.0301   Nursing and personal care 
+          facilities                     805
+77.0303   Home health care services      808
+77.0304   Veterinary services            074
+77.0305   Other medical and health 
+          services                       8042, 8043, 8049, 807, 
+                                         809 
+
+77B  Educational and social services, and membership
+     organizations:
+
+77.0401   Elementary and secondary 
+          schools                        821
+77.0402   Colleges, universities, and 
+          professional schools           822
+77.0403   Private libraries, vocational 
+          schools, and educational 
+          services, n.e.c.               823-4, 829
+77.0501   Business associations and 
+          professional membership 
+          organizations                  861-2
+77.0502   Labor organizations, civic,
+          social, and fraternal 
+          associations                   863-4
+77.0503   Religious organizations        866
+77.0504   Other membership organizations 84, 865, 869, 8733, 6732
+77.0600   Job training and related 
+          services                       833
+77.0700   Child day care services        835
+77.0800   Residential care               836
+77.0900   Social services, n.e.c.        832, 839
+
+SPECIAL INDUSTRIES
+
+78   Federal Government enterprises:
+
+78.0100   U.S. Postal Service            43
+78.0200   Federal electric utilities     (1)
+78.0500   Other Federal Government 
+          enterprises                    (1)
+
+79   State and local government enterprises:
+
+79.0100   State and local government 
+          passenger transit              (1)
+79.0200   State and local government 
+          electric utilities             (1)
+79.0300   Other State and local 
+          government enterprises         (1)
+
+80   Noncomparable imports:
+
+80.0000   Noncomparable imports          (2)
+
+81   Scrap, used and secondhand goods:
+
+81.0001   Scrap                          (3)
+81.0002   Used and secondhand goods      (3)
+
+82   General government industry:
+
+82.0000   General government industry    (4)
+
+83   Rest of the world adjustment to final uses:
+
+83.0000   Rest of the world adjustment 
+          to final uses                  (5)
+
+84   Household industry:
+
+84.0000   Household industry             (6)
+
+85   Inventory valuation adjustment
+
+85.0000   Inventory valuation adjustment (7)
+
+
+
+  1.  The SIC assigns the same codes to the activities 
+      of both private firms and government agencies, 
+      but the SIC codes in the I-O accounts are only used
+      for classifying private activities.
+
+  2.  Noncomparable imports include imported services that
+      are not commercially produced in the United States,
+      and goods and services that are produced abroad and
+      used abroad by U.S. residents--for example, U.S.
+      Federal Government defense spending abroad.
+
+  3.  Industry output is zero because there is no primary
+      producing industry.  Scrap is a secondary product of
+      many industries, and used goods are sales and purchases
+      typically between final uses. The sales are shown as
+      negative values in the use table.
+
+  4.  Industry output is defined as the compensation of employees 
+      and consumption of fixed capital of general government
+      agencies.  The compensation of employees engaged in
+      construction work is included in the construction industry. 
+
+  5.  The commodity entries include adjustments among PCE and
+      government expenditures to eliminate counting the
+      expenditures by foreign residents in both exports and 
+      PCE or government expenditures.
+
+  6.  Industry output is defined as the compensation of domestic
+      household workers.
+
+  7.  The inventory valuation adjustment is an adjustment needed
+      to eliminate inventory profits or losses from the change 
+      in inventory component of gross output.
+
